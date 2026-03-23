@@ -22,7 +22,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center gap-5">
-              <img src="/images/logo.jpeg" alt="Logo" className="w-10 h-10 rounded-full bg-none" />
+              <img
+                src="/images/logo.jpeg"
+                alt="Logo"
+                className="w-10 h-10 rounded-full bg-none"
+              />
               <a
                 href="#home"
                 className="text-2xl font-black tracking-tighter text-amber-800 dark:text-amber-500 uppercase"
@@ -116,8 +120,8 @@ export default function Home() {
             </h1>
 
             <p className="text-lg md:text-2xl text-gray-200 mb-10 leading-relaxed max-w-2xl mx-auto font-light">
-              "Transforming premium pine wood into interior masterpieces. Built
-              with international standards and a legacy of mastery."
+              &quot;Transforming premium pine wood into interior masterpieces. Built
+              with international standards and a legacy of mastery.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
@@ -179,8 +183,8 @@ export default function Home() {
                 </p>
                 <div className="relative p-8 rounded-3xl bg-gray-50 dark:bg-gray-800/50 border-l-4 border-amber-500">
                   <p className="italic text-gray-800 dark:text-gray-200 text-xl font-medium">
-                    "Furniture is not just a static object; it is a dialogue
-                    between nature, machine precision, and the human touch."
+                    &quot;Furniture is not just a static object; it is a dialogue
+                    between nature, machine precision, and the human touch.
                   </p>
                 </div>
                 <p className="font-medium text-gray-900 dark:text-white">
@@ -300,12 +304,12 @@ export default function Home() {
 
                   {/* OVERLAY: Muncul saat di-hover */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
-                    <Badge
+                    {/* <Badge
                       color="warning"
                       className="w-fit mb-4 px-4 py-1 text-[10px] uppercase font-bold tracking-widest rounded-full"
                     >
                       {p.category}
-                    </Badge>
+                    </Badge> */}
                     <h5 className="text-2xl font-black text-white tracking-tight mb-2">
                       {p.title}
                     </h5>
@@ -400,14 +404,28 @@ export default function Home() {
                 Connect with us
               </p>
               <div className="flex gap-10 text-xs font-black tracking-[0.3em] uppercase">
-                <a href="#" className="hover:text-amber-500 transition-colors">
+                {/* Instagram: Tambahkan https:// agar tidak dianggap internal path */}
+                <a
+                  href="https://www.instagram.com/Arjamukti_Pinus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-amber-500 transition-colors"
+                >
                   Instagram
                 </a>
-                <a href="#" className="hover:text-amber-500 transition-colors">
+
+                {/* WhatsApp: Gunakan format wa.me agar langsung membuka chat */}
+                <a
+                  href="https://wa.me/62895393494784"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-amber-500 transition-colors"
+                >
                   WhatsApp
                 </a>
-                <a href="#" className="hover:text-amber-500 transition-colors">
-                  Behance
+
+                <a href="https://www.facebook.com/Arjamukti Pinus Pinus" target="_blank" rel="noopener noreferrer" className="hover:text-amber-500 transition-colors">
+                  Facebook
                 </a>
               </div>
             </div>
