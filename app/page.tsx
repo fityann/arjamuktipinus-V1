@@ -90,7 +90,7 @@ export default function Home() {
       {/* HERO SECTION */}
       <section
         id="home"
-        className="relative h-screen flex items-center justify-center overflow-hidden"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20" // Tambahkan pt-20
       >
         <div className="absolute inset-0 z-0">
           <video
@@ -120,8 +120,8 @@ export default function Home() {
             </h1>
 
             <p className="text-lg md:text-2xl text-gray-200 mb-10 leading-relaxed max-w-2xl mx-auto font-light">
-              &quot;Transforming premium pine wood into interior masterpieces. Built
-              with international standards and a legacy of mastery.
+              &quot;Transforming premium pine wood into interior masterpieces.
+              Built with international standards and a legacy of mastery.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
@@ -129,7 +129,7 @@ export default function Home() {
                 color="warning"
                 size="xl"
                 pill
-                className="font-bold px-10 group bg-amber-500 hover:bg-amber-600 shadow-xl shadow-amber-900/20"
+                className="font-bold px-10 py-3 group bg-amber-500 hover:bg-amber-600 shadow-xl shadow-amber-900/20"
                 href="#furnitur"
               >
                 Explore Collections
@@ -183,8 +183,9 @@ export default function Home() {
                 </p>
                 <div className="relative p-8 rounded-3xl bg-gray-50 dark:bg-gray-800/50 border-l-4 border-amber-500">
                   <p className="italic text-gray-800 dark:text-gray-200 text-xl font-medium">
-                    &quot;Furniture is not just a static object; it is a dialogue
-                    between nature, machine precision, and the human touch.
+                    &quot;Furniture is not just a static object; it is a
+                    dialogue between nature, machine precision, and the human
+                    touch.
                   </p>
                 </div>
                 <p className="font-medium text-gray-900 dark:text-white">
@@ -424,7 +425,12 @@ export default function Home() {
                   WhatsApp
                 </a>
 
-                <a href="https://www.facebook.com/Arjamukti Pinus Pinus" target="_blank" rel="noopener noreferrer" className="hover:text-amber-500 transition-colors">
+                <a
+                  href="https://www.facebook.com/Arjamukti Pinus Pinus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-amber-500 transition-colors"
+                >
                   Facebook
                 </a>
               </div>
