@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "flowbite-react": ["./node_modules/flowbite-react"]
     }
   },
   "include": [
